@@ -34,10 +34,10 @@ export default class App {
         let impares = 0;
         while(i <= fin){
 
-            if(i % 2 !== 0){
-                impares = impares + 1;
+            if(i%2 !== 0){
+                impares++;
             }
-            i = i + 1;
+            i++;
         }
         return impares;
     }
