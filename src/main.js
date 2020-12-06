@@ -10,10 +10,12 @@ export default class App {
         return suma;
     }
     contarImparesFor(inicio, fin){
+
         let impares = 0;
+
         for(let i = inicio; i <= fin; i = i + 1){
             if(i % 2 !== 0){
-                impares++;
+                impares = impares + 1;
             }
         }
         return impares;
@@ -80,5 +82,5 @@ console.log(app.contarImparesFor(5, 10));
 console.log(app.sumarParesWhile());
 console.log(app.contarImparesWhile(5, 10));
 console.log(app.sumarParesDo());
-console.log(app.contarImparesDo(5, 11));
+console.log(app.contarImparesDo(5, 10));
 
